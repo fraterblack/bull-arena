@@ -36,7 +36,7 @@ const arenaConfig = Arena(
         ],
     },
     {
-        basePath: '',
+        basePath: '/queue',
         disableListen: true
     });
 
