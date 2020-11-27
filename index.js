@@ -36,7 +36,7 @@ const arenaConfig = Arena(
         ],
     },
     {
-        basePath: '/dashboard',
+        basePath: '',
         disableListen: true
     });
 
