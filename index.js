@@ -9,6 +9,8 @@ const redis = {
     host: 'localhost',
 };
 
+//
+
 const arenaConfig = Arena(
     {
         Bull,
