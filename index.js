@@ -17,20 +17,33 @@ const arenaConfig = Arena(
         queues: [
             {
                 type: 'bull',
+                name: "core_main_queue",
+                hostId: "Core Main Queue",
+                redis,
+            },
+
+            {
+                type: 'bull',
                 name: "timesheet_main_queue",
-                hostId: "Main Queue",
+                hostId: "Timesheet Main Queue",
                 redis,
             },
             {
                 type: 'bull',
                 name: "timesheet_calculation_queue",
-                hostId: "Calculation Queue",
+                hostId: "Timesheet Calculation Queue",
                 redis,
             },
             {
                 type: 'bull',
                 name: "timesheet_reprocessing_queue",
-                hostId: "Reprocessing Queue",
+                hostId: "Timesheet Reprocessing Queue",
+                redis,
+            },
+            {
+                type: 'bull',
+                name: "collector_main_queue",
+                hostId: "Collector Main Queue",
                 redis,
             },
         ],
